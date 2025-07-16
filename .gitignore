@@ -1,0 +1,71 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build folder recursively
+build/
+build-clangd/
+
+# vscode
+.vscode/
+.vscodecounter/
+
+# dat files
+*.dat
+*.dat.*
+
+# audio files
+*.ogg
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.ape
+*.m4b
+*.ogv
+
+# video files
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.wmv
+*.flv
+*.webm
+*.m4v
+
+# log.txt
+log.txt
+
+# config files
+*.cfg

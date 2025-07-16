@@ -1,0 +1,48 @@
+{
+    "version": 2,
+    "configurePresets":
+    [
+        {
+            "name": "Debug",
+            "generator": "Visual Studio 17 2022",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "Release",
+            "generator": "Visual Studio 17 2022",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+          "name": "clangd-friendly",
+          "hidden": false,
+          "generator": "Ninja",
+          "binaryDir": "${sourceDir}/build",
+          "cacheVariables": {
+            "CMAKE_C_COMPILER": "cl",
+            "CMAKE_CXX_COMPILER": "cl",
+            "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+            "CMAKE_CXX_STANDARD": "17"
+          }
+        }  
+    ],
+    "buildPresets": [
+    {
+      "name": "windows-debug",
+      "displayName": "Debug",
+      "configurePreset": "Debug",
+      "configuration": "Debug"
+    },
+    {
+      "name": "windows-release",
+      "displayName": "Release",
+      "configurePreset": "Release",
+      "configuration": "Release"
+    }
+  ]
+}
