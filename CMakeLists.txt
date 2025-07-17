@@ -28,6 +28,7 @@ file(GLOB_RECURSE project_GLOB
 message(STATUS "project_GLOB: ${project_GLOB}")
 
 add_executable(wxGrabber ${project_GLOB})
+set_target_properties(wxGrabber PROPERTIES WIN32_EXECUTABLE YES)
 
 target_link_libraries(wxGrabber PRIVATE ${wxWidgets_LIBRARIES})
 target_include_directories(wxGrabber PRIVATE ${wxWidgets_INCLUDE_DIRS})
